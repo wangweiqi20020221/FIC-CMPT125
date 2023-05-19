@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -85,7 +86,7 @@ int question7() {
     }
     sum_days = 0;
     while(month1 != month2) {
-        sum_days = sum_days + get_days(month1);
+        sum_days += get_days(month1);
         cout << sum_days << endl;
         if(month1 == 13) {
             month1 = 1;
